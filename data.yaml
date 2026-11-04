@@ -1,0 +1,66 @@
+# Edite este arquivo com seus dados (versão em português).
+# A versão em inglês fica em data_en.yaml — arquivo independente, não é
+# uma tradução automática deste (o texto foi escrito diretamente em inglês).
+# Depois de editar, rode: .venv/bin/python gerar.py
+#
+# Este arquivo vem com dados de EXEMPLO (fictícios). Substitua por informações reais.
+
+nome: "Maria Fernanda Costa"
+
+contato:
+  celular: "(11) 90000-0000"
+  email: "maria.exemplo@email.com"
+  linkedin: "www.linkedin.com/in/maria-exemplo"
+  endereco: "São Paulo - SP"
+
+rotulos:
+  resumo: "Resumo"
+  experiencia: "Experiência Profissional"
+  habilidades: "Habilidades"
+  certificacoes: "Certificações"
+
+titulo: "Analista de Marketing Digital"
+
+perfil: >
+  Profissional de marketing digital com 5+ anos de experiência em planejamento de campanhas, gestão de redes sociais e análise de métricas de performance. Histórico de condução de estratégias que aumentaram engajamento e conversão em ambientes de e-commerce e varejo. Busco atuar em projetos que unam criatividade, dados e resultado de negócio.
+
+habilidades:
+  - categoria: "Marketing & Growth"
+    itens:
+      - "Planejamento e execução de campanhas multicanal"
+      - "SEO e marketing de conteúdo"
+      - "Gestão de redes sociais e mídia paga (Meta Ads, Google Ads)"
+  - categoria: "Dados & Analytics"
+    itens:
+      - "Google Analytics e Google Tag Manager"
+      - "Construção de dashboards e relatórios de performance"
+      - "Testes A/B e otimização de conversão"
+  - categoria: "Ferramentas"
+    itens:
+      - "RD Station, HubSpot, Mailchimp"
+      - "Canva, Adobe Photoshop"
+      - "Excel avançado e Power BI"
+  - categoria: "Idiomas"
+    itens:
+      - "Inglês avançado"
+      - "Espanhol básico"
+
+experiencias:
+  - cargo: "Analista de Marketing Digital"
+    empresa: "Nova Varejo Ltda"
+    periodo: "Mar de 2022 - atual"
+    atividades:
+      - "Planejamento e execução de campanhas de mídia paga, aumentando em ~30% a taxa de conversão do site."
+      - "Gestão de redes sociais da marca, elevando o engajamento médio em ~50% em um ano."
+      - "Criação de relatórios de performance e dashboards para acompanhamento de KPIs junto à diretoria."
+      - "Coordenação de parcerias com influenciadores e ações de marketing de conteúdo."
+  - cargo: "Assistente de Marketing"
+    empresa: "Comércio Horizonte S.A."
+    periodo: "Jan de 2020 - Fevereiro de 2022"
+    atividades:
+      - "Apoio no planejamento de campanhas sazonais e produção de materiais gráficos."
+      - "Atualização de conteúdo em redes sociais e monitoramento de métricas básicas."
+
+certificacoes:
+  - "Google Ads Certification"
+  - "Marketing Digital - RD University"

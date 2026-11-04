@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="{{ lang | default('pt-br') }}">
+<head>
+<meta charset="UTF-8">
+<title>{{ nome }} - Currículo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+
+    <header class="cabecalho">
+      <h1>{{ nome }}</h1>
+      {% if titulo %}<p class="subtitulo">{{ titulo }}</p>{% endif %}
+      {% if contato %}
+      <p class="contato-linha">
+        {%- set partes = [] -%}
+        {%- if contato.endereco %}{% set _ = partes.append(contato.endereco) %}{% endif -%}
+        {%- if contato.celular %}{% set _ = partes.append(contato.celular) %}{% endif -%}
+        {%- if contato.email %}{% set _ = partes.append('<a href="mailto:' ~ contato.email ~ '">' ~ contato.email ~ '</a>') %}{% endif -%}
+        {%- if contato.linkedin %}{% set _ = partes.append('<a href="https://' ~ contato.linkedin ~ '">' ~ contato.linkedin ~ '</a>') %}{% endif -%}
+        {{ partes | join(' | ') | safe }}
+      </p>
+      {% endif %}
+    </header>
+
+    {% if perfil %}
+    <section class="secao">
+      <h2 class="titulo-secao">{{ rotulos.resumo }}</h2>
+      <p>{{ perfil }}</p>
+    </section>
+    {% endif %}
+
+    {% if experiencias %}
+    <section class="secao">
+      <h2 class="titulo-secao">{{ rotulos.experiencia }}</h2>
+      {% for exp in experiencias %}
+      <div class="item">
+        <div class="item-cabecalho">
+          <span class="empresa">{{ exp.empresa }}{% if exp.cargo %}, {{ exp.cargo }}{% endif %}</span>
+          <span class="periodo">{{ exp.periodo }}</span>
+        </div>
+        {% if exp.atividades %}
+        <ul>
+          {% for a in exp.atividades %}
+          <li>{{ a }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </section>
+    {% endif %}
+
+    {% if habilidades %}
+    <section class="secao">
+      <h2 class="titulo-secao">{{ rotulos.habilidades }}</h2>
+      {% for grupo in habilidades %}
+      <p class="linha-habilidade"><span class="categoria">{{ grupo.categoria }}:</span> {{ grupo.itens | join('; ') }}</p>
+      {% endfor %}
+    </section>
+    {% endif %}
+
+    {% if certificacoes %}
+    <section class="secao">
+      <h2 class="titulo-secao">{{ rotulos.certificacoes }}</h2>
+      <ul>
+        {% for c in certificacoes %}
+        <li>{{ c }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+
+  </div>
+</body>
+</html>

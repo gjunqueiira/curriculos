@@ -1,0 +1,66 @@
+# Edit this file with your English resume content.
+# This is an independent file, not an automatic translation of data.yaml —
+# the text below was written directly in English so it reads naturally.
+# After editing, run: .venv/bin/python gerar.py
+#
+# This file ships with EXAMPLE (fictional) data. Replace it with your real information.
+
+nome: "Maria Fernanda Costa"
+
+contato:
+  celular: "(11) 90000-0000"
+  email: "maria.exemplo@email.com"
+  linkedin: "www.linkedin.com/in/maria-exemplo"
+  endereco: "São Paulo, Brazil"
+
+rotulos:
+  resumo: "Summary"
+  experiencia: "Professional Experience"
+  habilidades: "Skills"
+  certificacoes: "Certifications"
+
+titulo: "Digital Marketing Analyst"
+
+perfil: >
+  Digital marketing professional with 5+ years of experience in campaign planning, social media management, and performance analytics. Track record of driving strategies that increased engagement and conversion in e-commerce and retail environments. Looking to work on projects that combine creativity, data, and business results.
+
+habilidades:
+  - categoria: "Marketing & Growth"
+    itens:
+      - "Multichannel campaign planning and execution"
+      - "SEO and content marketing"
+      - "Social media management and paid media (Meta Ads, Google Ads)"
+  - categoria: "Data & Analytics"
+    itens:
+      - "Google Analytics and Google Tag Manager"
+      - "Dashboard and performance report building"
+      - "A/B testing and conversion rate optimization"
+  - categoria: "Tools"
+    itens:
+      - "RD Station, HubSpot, Mailchimp"
+      - "Canva, Adobe Photoshop"
+      - "Advanced Excel and Power BI"
+  - categoria: "Languages"
+    itens:
+      - "English – advanced"
+      - "Spanish – basic"
+
+experiencias:
+  - cargo: "Digital Marketing Analyst"
+    empresa: "Nova Varejo Ltda"
+    periodo: "Mar 2022 - present"
+    atividades:
+      - "Planned and executed paid media campaigns, increasing site conversion rate by ~30%."
+      - "Managed the brand's social media presence, raising average engagement by ~50% in one year."
+      - "Built performance reports and dashboards to track KPIs with senior leadership."
+      - "Coordinated influencer partnerships and content marketing initiatives."
+  - cargo: "Marketing Assistant"
+    empresa: "Comércio Horizonte S.A."
+    periodo: "Jan 2020 - February 2022"
+    atividades:
+      - "Supported planning of seasonal campaigns and produced graphic materials."
+      - "Updated social media content and tracked basic performance metrics."
+
+certificacoes:
+  - "Google Ads Certification"
+  - "Digital Marketing - RD University"
