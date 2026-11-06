@@ -10,6 +10,15 @@ Não tem nenhum modelo de IA ou machine learning no meio. Daria pra colocar (ger
 
 ## Como usar
 
+Na primeira vez, copie os arquivos de exemplo:
+
+```powershell
+Copy-Item data.example.yaml data.yaml
+Copy-Item data_en.example.yaml data_en.yaml
+```
+
+`data.yaml` e `data_en.yaml` estão no `.gitignore`, então seus dados pessoais nunca vão para o git.
+
 Edite `data.yaml` (português) e/ou `data_en.yaml` (inglês) com seus dados e rode:
 
 ```powershell
@@ -24,8 +33,9 @@ Isso sempre gera as duas versões: `curriculo.html`/`curriculo.pdf` (a partir de
 
 ## Arquivos
 
-- `data.yaml` — conteúdo do currículo em português (edite este).
-- `data_en.yaml` — conteúdo do currículo em inglês (edite este, independentemente do PT).
+- `data.example.yaml` / `data_en.example.yaml` — modelos com dados fictícios (versionados).
+- `data.yaml` — conteúdo do currículo em português (edite este; ignorado pelo git).
+- `data_en.yaml` — conteúdo do currículo em inglês (edite este, independentemente do PT; ignorado pelo git).
 - `template.html` — estrutura HTML (Jinja2), compartilhada pelos dois idiomas.
 - `style.css` — visual do currículo.
 - `gerar.py` — script que gera o PDF em português e inglês a partir dos dois arquivos de dados.
